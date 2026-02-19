@@ -14,20 +14,27 @@ html,body{
 /* Mobile devices */
 @media (max-width: 768px) {
     .top-nav {
-        margin: 0px 0px 0px 15px;
+        margin: 0;              /* remove extra offsets */
+        width: 100%;            /* nav spans full width */
     }
     .top-nav ul {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column; /* stack items vertically */
+        align-items: stretch;   /* each item fills width */
+        gap: 12px;              /* consistent spacing */
         width: 100%;
-        gap: 12px;   /* comfortable spacing for taps */
+    }
+    .top-nav ul li {
+        width: 100%;            /* each li takes full width */
     }
     .top-nav ul li a {
         display: block;
-        width: 100%; /* links stretch full width */
-        padding: 10px 15px;
+        width: 100%;            /* links stretch full width */
+        padding: 12px 15px;     /* touch-friendly padding */
+        text-align: left;       /* align text neatly */
+        border-bottom: 1px solid var(--outer-color); /* subtle divider */
     }
 }
+
 
 
 /* Tablets */
@@ -218,5 +225,6 @@ html,body{
     {
 
     }
+
 
 
