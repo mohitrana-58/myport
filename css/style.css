@@ -20,9 +20,15 @@ html,body{
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
-        gap: 10px;
+        gap: 12px;   /* comfortable spacing for taps */
+    }
+    .top-nav ul li a {
+        display: block;
+        width: 100%; /* links stretch full width */
+        padding: 10px 15px;
     }
 }
+
 
 /* Tablets */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -212,4 +218,5 @@ html,body{
     {
 
     }
+
 
